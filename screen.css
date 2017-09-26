@@ -85,6 +85,23 @@ h1 {
 	padding-bottom: 1em;
 	text-indent: 16em;
 
+  @media screen and (min-width: 585px) {
+    #primary {
+      width: 61.28709056%;
+      /* 318.08 px / 519px = 0.6128709056 */
+      float: left;
+    }
+    #supporting {
+      width: 34.473988844%;
+      /* 178.92 px / 519 = 0.3447398844 */
+      margin-left: 65.52601156%;
+      /* 340.08 px / 519 px = 0/6552601156 */
+    }
+    #footer {
+      clear:both;
+    }
+  }
+
 
 /* Responsive Images */
 img {
