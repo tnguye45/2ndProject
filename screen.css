@@ -49,3 +49,14 @@ li > ol {
 	padding-bottom: 0;
 
 }
+li li:last-child {
+	padding-bottom: 0;
+}
+/* Layout */
+#navigation ul{
+	display:block;
+}
+/* Modular */
+nav ul{
+	list-style-type: none;
+}
