@@ -53,10 +53,18 @@ li li:last-child {
 	padding-bottom: 0;
 }
 /* Layout */
-#navigation ul{
-	display:block;
+#navigation{
+	position:absolute;
+	top: 0;
 }
+#navigation li{
+	display: inline-block;
+}
+
 /* Modular */
 nav ul{
 	list-style-type: none;
+}
+nav a {
+	text-decoration: none;
 }
