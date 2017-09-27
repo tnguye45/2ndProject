@@ -16,6 +16,11 @@ html {
 	text-size-adjust: 100%
 
 }
+body {
+	padding-top: 44px;
+	padding-left: 22px;
+	padding-right: 22px;
+}
 
 
 
@@ -23,8 +28,24 @@ h1, h2, h3, p {
 	padding-bottom: 1.222em;
 }
 
-#content li {
+ li {
 	padding-bottom: 11 px;
 }
 
-#content ul, #content ol {
+ul, ol {
+	color: red;
+	padding-bottom: 11px;
+}
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+}
+ol {
+	list-style-type: decimal;
+}
+li > ul,
+li > ol {
+	padding-left: 22px;
+	padding-bottom: 0;
+
+}
