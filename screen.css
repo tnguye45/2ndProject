@@ -54,17 +54,22 @@ li li:last-child {
 }
 /* Layout */
 #navigation{
-	position:absolute;
+	position: absolute;
 	top: 0;
+	left: 0;
 }
 #navigation li{
-	display: inline-block;
+	float: left;
+	width: 33.333333%;
 }
 
 /* Modular */
 nav ul{
 	list-style-type: none;
 }
+
 nav a {
+	display: block;
+	background-color: blue;
 	text-decoration: none;
 }
