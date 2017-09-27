@@ -17,7 +17,7 @@ html {
 
 }
 body {
-	padding-top: 44px;
+	padding-top: 66px;
 	padding-left: 22px;
 	padding-right: 22px;
 }
@@ -70,6 +70,10 @@ nav ul{
 
 nav a {
 	display: block;
+	padding-top: 11px;
+	padding-bottom: 11px;
 	background-color: blue;
 	text-decoration: none;
+	text-align: center;
+
 }
