@@ -6,9 +6,8 @@
 /* Begin site styles below */
 
 html {
-	font-size: 18px;/* 18px / 16px = 1.125em */
-	line-height: 22px; /* 22px / 18px = 1.222em */
-
+	font-size: 1.125em;/* 18px / 16px = 1.125em */
+	line-height: 1.222px; /* 22px / 18px = 1.222em */
 	text-rendering: optimizeLegibility;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -17,9 +16,9 @@ html {
 
 }
 body {
-	padding-top: 66px;
-	padding-left: 22px;
-	padding-right: 22px;
+	padding-top: 66px; /* 66 px / 18 px = 3.667em */
+	padding-left: 1.222px; /* 22px / 18px = 1.222em */
+	padding-right: 1.222px; /* 22px / 18px = 1.222em */
 }
 
 
@@ -34,7 +33,7 @@ h1, h2, h3, p {
 
 ul, ol {
 	color: red;
-	padding-bottom: 11px;
+	padding-bottom: 0.611em; /* 11px / 18px = 0.611em */
 }
 ul {
 	list-style-type: square;
@@ -45,7 +44,7 @@ ol {
 }
 li > ul,
 li > ol {
-	padding-left: 22px;
+	padding-left: 1.222em; /* 22px / 18px = 1.222em */
 	padding-bottom: 0;
 
 }
@@ -70,8 +69,8 @@ nav ul{
 
 nav a {
 	display: block;
-	padding-top: 11px;
-	padding-bottom: 11px;
+	padding-top: 11px; /* 11px / 18px = 0.611em */
+	padding-bottom: 11px; /* 11px / 18px = 0.611em */
 	background-color: blue;
 	text-decoration: none;
 	text-align: center;
