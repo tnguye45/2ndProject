@@ -92,7 +92,6 @@ table {
 html {
 	background-color: lightcyan;
 	font-family: 'Quicksand', sans-serif;
-	font-weight: bold;
 	font-size: 1.125em;/* 18px / 16px = 1.125em */
 	line-height: 1.222em; /* 22px / 18px = 1.222em */
 	text-rendering: optimizeLegibility;
@@ -188,5 +187,57 @@ body {
 }
 
 .Arrival{
-  grid-area: row1 col1 row1end col1end;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
+
+.Chicago {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
+
+.Snow{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
+
+.Seoul{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: row2-start;
+  grid-row-end: 3;
+}
+
+.SeoulStreet{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: row2-start;
+  grid-row-end: 3;
+}
+
+.BrooklynBridge{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: row2-start;
+  grid-row-end: 3;
+}
+
+.BrooklynBridge1{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: row2-start;
+  grid-row-end: 3;
+}
+
+.OneWolrdTrade{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: row3-start;
+  grid-row-end: 4;
 }
