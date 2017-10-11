@@ -107,7 +107,8 @@ html {
 img {
 	display: block;
 	max-width: 100%;
-	max-width: 514px;
+	width: 100%;
+	text-align: center;
 }
 
 
@@ -175,7 +176,7 @@ body {
 	padding-right: 1.222px; /* 22px / 18px = 1.222em */
 }
 
-.article, h1 {
+#article, h1 {
   padding-bottom: 1.222em;
 }
 
