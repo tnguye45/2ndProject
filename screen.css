@@ -105,9 +105,9 @@ html {
 
 /* Responsive Images */
 img {
-	display: block;
 	max-width: 100%;
 	width: 100%;
+	display: block;
 	text-align: center;
 }
 
@@ -188,57 +188,67 @@ body {
 }
 
 #Arrival{
-  grid-column-start: 1;
+	float:left;
+	width: 100%;
+
+  /*grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row1-start;
-  grid-row-end: 2;
+  grid-row-end: 2; */
 }
 
 #Chicago {
-  grid-column-start: 2;
+	float: right;
+  /* grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: row1-start;
-  grid-row-end: 2;
+  grid-row-end: 2; */
 }
 
 #Snow{
-  grid-column-start: 3;
+	float:left;
+  /*grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: row1-start;
-  grid-row-end: 2;
+  grid-row-end: 2;*/
 }
 
 #Seoul{
-  grid-column-start: 1;
+	float:right;
+  /* grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row2-start;
-  grid-row-end: 3;
+  grid-row-end: 3; */
 }
 
 #SeoulStreet{
-  grid-column-start: 2;
+	float:left;
+  /* grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: row2-start;
-  grid-row-end: 3;
+  grid-row-end: 3;*/
 }
 
 #BrooklynBridge{
-  grid-column-start: 3;
+	float: right;
+  /* grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: row2-start;
-  grid-row-end: 3;
+  grid-row-end: 3;*/
 }
 
 #BrooklynBridge1{
-  grid-column-start: 4;
+	float: left;
+  /* grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: row2-start;
-  grid-row-end: 3;
+  grid-row-end: 3;*/
 }
 
 #OneWolrdTrade{
-  grid-column-start: 1;
+	float: right;
+  /* grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row3-start;
-  grid-row-end: 4;
+  grid-row-end: 4;*/
 }
