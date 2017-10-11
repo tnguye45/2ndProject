@@ -90,9 +90,8 @@ table {
 /* Begin site styles below */
 
 html {
-	background-color: ivory;
+	background-color #FFFFFO; /* ivory */
 	font-family: 'Quicksand', sans-serif;
-	color: lightseagreen;
 	font-size: 1.125em;/* 18px / 16px = 1.125em */
 	line-height: 1.222em; /* 22px / 18px = 1.222em */
 	text-rendering: optimizeLegibility;
@@ -101,6 +100,15 @@ html {
 	-ms-text-size-adjust: 100%;
 	text-size-adjust: 100%
 
+}
+
+header h1{
+	font-size: 3.5em; /* 63px / 18px = 3.5em */
+	line-height: 1.319em; /* 67.5px / 54 px = 1.319 em; 3 base lines grid */
+	font-weight: bold;
+	color: #20B2AA; /* LightSeaGreen */
+	padding-bottom: 1em;
+	text-indent: 12em;
 }
 
 
