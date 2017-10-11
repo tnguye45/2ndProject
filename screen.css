@@ -113,7 +113,7 @@ img {
 
 
 /* Navigation Layout */
-.navigation {
+.flexbox #navigation {
   list-style: none;
   margin: 0;
   background: lightcyan;
@@ -126,7 +126,7 @@ img {
   justify-content: flex-end;
 }
 
-.navigation a {
+#navigation a {
   text-decoration: none;
   display: flex;
   padding-top: : 0.611em; /* 11px / 18px = 0.611em */
@@ -156,14 +156,14 @@ img {
     padding: 0;
   }
 
-  .navigation a {
+  #navigation a {
     text-align: center;
     padding: 11px;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .navigation li:last-of-type a {
+  #navigation li:last-of-type a {
     border-bottom: none;
   }
 
@@ -179,63 +179,63 @@ body {
   padding-bottom: 1.222em;
 }
 
-.Years {
+#Years {
   grid-template-columns: 100px 50px 100px 50px;
   grid-template-rows: 80px 30px 80px 30px;
   grid-column-gap: 10px;
   grid-row-gap: 15px;
 }
 
-.Arrival{
+#Arrival{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row1-start;
   grid-row-end: 2;
 }
 
-.Chicago {
+#Chicago {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: row1-start;
   grid-row-end: 2;
 }
 
-.Snow{
+#Snow{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: row1-start;
   grid-row-end: 2;
 }
 
-.Seoul{
+#Seoul{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-.SeoulStreet{
+#SeoulStreet{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-.BrooklynBridge{
+#BrooklynBridge{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-.BrooklynBridge1{
+#BrooklynBridge1{
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-.OneWolrdTrade{
+#OneWolrdTrade{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row3-start;
