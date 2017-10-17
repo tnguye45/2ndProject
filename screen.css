@@ -191,16 +191,16 @@ body section{
   padding-bottom: 1.222em;
 }
 
-/*.cssgrid #content{
-	grid-template-columns: 100px 50px 100px 50px;
-  grid-template-rows: 80px 30px 80px 30px;
+.cssgrid #content{
+	grid-template-columns: 25% 50% auto;
+  grid-template-rows: 25% 50% auto;
   grid-column-gap: 10px;
   grid-row-gap: 15px;
 
-}*/
+}
 .cssgrid #Years{
-	grid-template-columns: 100px 50px 100px 50px;
-  grid-template-rows: 80px 30px 80px 30px;
+	grid-template-columns: 25% 50% auto;
+  grid-template-rows: 25% 50% 50% 50%;
   grid-column-gap: 10px;
   grid-row-gap: 15px;
 }
