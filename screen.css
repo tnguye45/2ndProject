@@ -108,14 +108,14 @@ header h1{
 	font-weight: bold;
 	color: #20B2AA; /* LightSeaGreen */
 	padding-bottom: 1em;
-	text-indent: 12em;
+	text-indent: center;
 }
 
 
 /* Responsive Images */
 img {
-	width: 100%;
-	max-width: 100%;
+	width: 80%;
+	min-width: 80%;
 	display: block;
 	text-align: center;
 }
@@ -191,6 +191,12 @@ body section{
   padding-bottom: 1.222em;
 }
 
+#footer {
+  text-align: center;
+  font-size: 0.9em; /* 18 / 20 = 0.9em */
+  height: 100%;
+}
+
 .cssgrid #content{
 	grid-template-columns: 25% 50% auto;
   grid-template-rows: 25% 50% auto;
@@ -206,6 +212,48 @@ body section{
 }
 
 
+/*
+5-column gird: 600px
+100px-wide coulums
+25px-wide gutters
+2-column module = 225px;
+3-column module = 350px;
+4-column module = 475px;
+4-column offset = 500px;
+*/
+
+@media screen and (min-width: 650px) {
+	.arrival img {
+		width: 58.33%; /* 350 / 600px = 0.58333*/
+		float: left;
+	}
+	.arrival figcaption{
+		width: 37.5%; /* 225 / 600px = 0.375 */
+		float: left;
+		margin-left: 4.166667%; /* 25 / 600px = .04166667 */
+	}
+	footer{
+		clear: both;
+	}
+}
+
+
+@media screen and (min-width: 1020px) {
+	.arrival img {
+		width: 79.166667%; /* 475 / 1020px = 0.79166667*/
+		float: left;
+	}
+	.arrival figcaption{
+		width: 16.66667%; /* 100 / 600px = 0.1666667 */
+		float: left;
+		margin-left: 4.166667%; /* 25 / 600px = .04166667 */
+	}
+	footer{
+		clear: both;
+	}
+}
+
+
 /*.cssgrid #supporting {
 	grid-column: 3/4;
 }
@@ -218,56 +266,56 @@ body section{
   grid-row-gap: 15px;
 }*/
 
-#Arrival{
+#arrival{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row1-start;
   grid-row-end: 2;
 }
 
-#Chicago {
+#chicago {
 	grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: row1-start;
   grid-row-end: 2;
 }
 
-#Snow{
+#snow{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: row1-start;
   grid-row-end: 2;
 }
 
-#Seoul{
+#seoul{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-#SeoulStreet{
+#seoulstreet{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-#BrooklynBridge{
+#brooklynbridge{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-#BrooklynBridge1{
+#brooklynbridge1{
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-#OneWolrdTrade{
+#onewolrdtrade{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row3-start;
