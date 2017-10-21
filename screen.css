@@ -114,8 +114,8 @@ header h1{
 
 /* Responsive Images */
 img {
-	width: 80%;
-	min-width: 80%;
+	width: 100%;
+	max-width: 100%;
 	display: block;
 	text-align: center;
 }
@@ -204,7 +204,7 @@ body section{
   grid-row-gap: 15px;
 
 }
-.cssgrid #Years{
+.cssgrid #Location{
 	grid-template-columns: 25% 50% auto;
   grid-template-rows: 25% 50% 50% 50%;
   grid-column-gap: 10px;
@@ -243,7 +243,7 @@ body section{
 		width: 79.166667%; /* 475 / 1020px = 0.79166667*/
 		float: left;
 	}
-	.arrival figcaption{
+	.cvaleaves figcaption{
 		width: 16.66667%; /* 100 / 600px = 0.1666667 */
 		float: left;
 		margin-left: 4.166667%; /* 25 / 600px = .04166667 */
@@ -266,56 +266,56 @@ body section{
   grid-row-gap: 15px;
 }*/
 
-#arrival{
+#cvaleaves {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row1-start;
   grid-row-end: 2;
 }
 
-#chicago {
+#cvaabove {
 	grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: row1-start;
   grid-row-end: 2;
 }
 
-#snow{
+#cvarain {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: row1-start;
   grid-row-end: 2;
 }
 
-#seoul{
+#cvaleaves1 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-#seoulstreet{
+#cvanoon {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-#brooklynbridge{
+#cvafoggy {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-#brooklynbridge1{
+#redleaf{
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: row2-start;
   grid-row-end: 3;
 }
 
-#onewolrdtrade{
+#redleaf1{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: row3-start;
