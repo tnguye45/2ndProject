@@ -120,7 +120,8 @@ table {
 /* Begin site styles below */
 
 html {
-	background-color #FFFFFO; /* ivory */
+	background-color: #F2CCB4; /* ivory */
+	opacity: 1;/* Fully transparent */
 	font-family: 'Garamond', serif;
 	font-size: 1.125em;/* 18px / 16px = 1.125em */
 	line-height: 1.222em; /* 22px / 18px = 1.222em */
@@ -136,9 +137,9 @@ header h1{
 	font-size: 3.5em; /* 63px / 18px = 3.5em */
 	line-height: 1.319em; /* 67.5px / 54 px = 1.319 em; 3 base lines grid */
 	font-weight: bold;
-	color: #20B2AA; /* LightSeaGreen */
+	color: #0D0906; /* LightBlack */
 	padding-bottom: 1em;
-	text-indent: center;
+	text-indent: 35%;
 }
 
 
@@ -155,27 +156,32 @@ img {
 /* Navigation Layout */
 .flexbox #navigation {
   list-style: none;
-  margin: 0;
-  background: lightcyan;
+  margin: 35%;
+  background-color: #FFFFFF;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: center;
+	text-align: center;
 }
 
 #navigation a {
   text-decoration: none;
-  display: flex;
+  display: block;
   padding-top: : 0.611em; /* 11px / 18px = 0.611em */
   padding-bottom: 0.611em; /* 11px / 18px = 0.611em */
-  color: white;
+  color: black;
+	text-align: center;
+	padding: 0.611em;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .navigation a:hover {
-  background: #00b7f5;
+  background: #DF6214;
 }
 
 @media all and (max-width: 800px) {
@@ -196,12 +202,6 @@ img {
     padding: 0;
   }
 
-  #navigation a {
-    text-align: center;
-    padding: 11px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
 
   #navigation li:last-of-type a {
     border-bottom: none;
@@ -210,30 +210,21 @@ img {
 /* Create grid for body */
 body section{
 	clear: both;
-	height: 100vh;
   display: grid;
   padding-top: 66px; /* 66 px / 18 px = 3.667em */
-	padding-left: 1.222px; /* 22px / 18px = 1.222em */
-	padding-right: 1.222px; /* 22px / 18px = 1.222em */
+	padding-left: 2em; /* 36px / 18px = 1.222em */
+	padding-right: 2em; /* 36px / 18px = 1.222em */
 }
 
-#article, h1 {
-  padding-bottom: 1.222em;
+article #Hanoi {
+  padding-bottom: 4em;
 }
 
 #footer {
   text-align: center;
   font-size: 0.9em; /* 18 / 20 = 0.9em */
-  height: 100%;
 }
 
-.cssgrid #content{
-	grid-template-columns: 25% 50% auto;
-  grid-template-rows: 25% 50% auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
-
-}
 .cssgrid #Location{
 	grid-template-columns: 25% 50% auto;
   grid-template-rows: 25% 50% 50% 50%;
@@ -257,11 +248,7 @@ body section{
 		width: 58.33%; /* 350 / 600px = 0.58333*/
 		float: left;
 	}
-	.arrival figcaption{
-		width: 37.5%; /* 225 / 600px = 0.375 */
-		float: left;
-		margin-left: 4.166667%; /* 25 / 600px = .04166667 */
-	}
+
 	footer{
 		clear: both;
 	}
@@ -273,19 +260,10 @@ body section{
 		width: 79.166667%; /* 475 / 1020px = 0.79166667*/
 		float: left;
 	}
-	.cvaleaves figcaption{
-		width: 16.66667%; /* 100 / 600px = 0.1666667 */
-		float: left;
-		margin-left: 4.166667%; /* 25 / 600px = .04166667 */
-	}
+
 	footer{
 		clear: both;
 	}
-}
-
-#Hanoi figure {
-	height: 100vh;
-
 }
 
 #Hanoi figure {
