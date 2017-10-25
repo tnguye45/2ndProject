@@ -130,7 +130,7 @@ html {
 
 }
 
-header h1{
+h1{
 	font-size: 3.5em; /* 63px / 18px = 3.5em */
 	line-height: 1.319em; /* 67.5px / 54 px = 1.319 em; 3 base lines grid */
 	font-weight: bold;
@@ -139,33 +139,24 @@ header h1{
 	text-indent: 40%;
 }
 
-
-header h2{
- font-size: 2.5em; /* 45px / 18px = 3.5em */
- line-height: 1.25em; /* 45px / 36 px = 1.319 em; 2 base lines grid */
+h2{
+ font-size: 1.5em; /* 27px / 18px = 1.5em */
+ line-height: 1em; /* 1 base lines grid */
  font-weight: bold;
- color: #0D0906; /* LightBlack */
- padding-bottom: 1.5em;
+ color: #201717; /* LightBlack */
+ padding-bottom: 1.125em; /* 20.25 px / 18 px = 1.125em */
+ padding-top: 1.5em; /* 27 px / 18 px = 1.5em */
 }
 
-header h3{
- font-size: 2.5em; /* 45px / 18px = 3.5em */
- line-height: 1.25em; /* 45px / 36 px = 1.319 em; 2 base lines grid */
+h3{
+ font-size: 1.5em; /* 27px / 18px = 1.5em */
+ line-height: 1em; /*1 base lines grid */
  font-weight: bold;
- color: #0D0906; /* LightBlack */
- padding-bottom: 1.5em;
+ color: #201717; /* LightBlack */
+ padding-bottom: 1.125em; /* 20.25 px / 18 px = 1.125em */
+ padding-top: 1.5em; /* 27 px / 18 px = 1.5em */
+
 }
-
-
-
-/* Responsive Images */
-img {
-	width: 100%;
-	max-width: 100%;
-	display: block;
-	text-align: center;
-}
-
 
 
 /* Navigation Layout */
@@ -235,44 +226,60 @@ body section{
 	padding-right: 1.5em; /* 36px / 18px = 1.5em */
 }
 
-
-.About {
+p{
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 }
 
-
-
-section article #Hanoi {
-  padding-bottom: 4em;
-}
 
 .footer {
   text-align: center;
   font-size: 0.9em; /* 18 / 20 = 0.9em */
 }
 
-.cssgrid #article{
+
+/* Responsive Images */
+img {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	text-align: center;
+}
+
+/*.cssgrid img{
 	display: grid;
 	grid-template-columns: repeat(33.33% 33.33% 33.33%);
-  grid-column-gap: 5%;
-  grid-row-gap: 5%;
+  grid-column-gap: 1%;
+  grid-row-gap: %;
+}*/
+
+#Hanoi img {
+	float: left;
+	width: 32%;
+	padding-right: 1%;
+  padding-bottom: 1%;
 }
 
+#Chicago img {
+	float: left;
+	width: 32%;
+	padding-right: 1%;
+  padding-bottom: 1%;
+}
 
 /*
-5-column gird: 600px
-100px-wide coulums
-25px-wide gutters
-2-column module = 225px;
-3-column module = 350px;
-4-column module = 475px;
-4-column offset = 500px;
+3-column gird: 600px
+175px-wide columns
+18.75px-wide gutters
+2-column module = 368.75px;
+3-column module = 562.5x;
+4-column module = 756.25px;
+4-column offset = 700px;
 */
 
-@media screen and (min-width: 650px) {
-	.arrival img {
-		width: 58.33%; /* 350 / 600px = 0.58333*/
+@media screen and (min-width: 602px) {
+	.Hanoi img {
+		width: 93.4385%; /* 562.5 / 600px = 0.934385*/
 		float: left;
 	}
 
@@ -281,10 +288,20 @@ section article #Hanoi {
 	}
 }
 
+@media screen and (min-width: 602px) {
+	.Chicago img {
+		width: 93.4385%; /* 562.5 / 600px = 0.934385*/
+		float: left;
+	}
+
+	footer{
+		clear: both;
+	}
+}
 
 @media screen and (min-width: 1020px) {
-	.arrival img {
-		width: 79.166667%; /* 475 / 1020px = 0.79166667*/
+	.Hanoi img {
+		width: 74.1421%; /* 756.25 / 1020px = 0.741421*/
 		float: left;
 	}
 
@@ -293,16 +310,13 @@ section article #Hanoi {
 	}
 }
 
-#Hanoi figure {
-	float: left;
-	width: 33.33%;
-	grid-column-gap: 5%;
-  grid-row-gap: 5%;
-}
+@media screen and (min-width: 1020px) {
+	.Chicago img {
+		width: 74.1421%; /* 756.25 / 1020px = 0.741421*/
+		float: left;
+	}
 
-#Chicago figure {
-	float: left;
-	width: 33.33%;
-	grid-column-gap: 5%;
-  grid-row-gap: 5%;
+	footer{
+		clear: both;
+	}
 }
