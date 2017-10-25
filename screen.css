@@ -121,7 +121,7 @@ html {
 	opacity: 1;/* Fully transparent */
 	font-family: 'Garamond', serif;
 	font-size: 1.125em;/* 18px / 16px = 1.125em */
-	line-height: 1.222em; /* 22px / 18px = 1.222em */
+	line-height: 1.125em; /* 20.25px / 18px = 1.222em */
 	text-rendering: optimizeLegibility;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -136,8 +136,26 @@ header h1{
 	font-weight: bold;
 	color: #0D0906; /* LightBlack */
 	padding-bottom: 1em;
-	text-indent: 35%;
+	text-indent: 40%;
 }
+
+
+header h2{
+ font-size: 2.5em; /* 45px / 18px = 3.5em */
+ line-height: 1.25em; /* 45px / 36 px = 1.319 em; 2 base lines grid */
+ font-weight: bold;
+ color: #0D0906; /* LightBlack */
+ padding-bottom: 1.5em;
+}
+
+header h3{
+ font-size: 2.5em; /* 45px / 18px = 3.5em */
+ line-height: 1.25em; /* 45px / 36 px = 1.319 em; 2 base lines grid */
+ font-weight: bold;
+ color: #0D0906; /* LightBlack */
+ padding-bottom: 1.5em;
+}
+
 
 
 /* Responsive Images */
@@ -151,58 +169,60 @@ img {
 
 
 /* Navigation Layout */
-.flexbox #navigation {
+.flexbox .navigation {
   list-style: none;
-  margin: 45%;
-  background-color: #FFFFFF;
+  margin: 0;
+
+	background: #78E78E;
+
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+
   -webkit-flex-flow: row wrap;
-  justify-content: center;
-	text-align: center;
+  justify-content:space-around;
 }
 
-#navigation a {
+.navigation a {
   text-decoration: none;
   display: block;
-  padding-top: : 1%; /* 11px / 18px = 0.611em */
-  padding-bottom: 1%; /* 11px / 18px = 0.611em */
   color: black;
+	font-weight: bold;
+	padding: 0.611em;/* 11px / 18px = 0.611em */
+}
+
+.navigation a:hover {
+  background: #78E78E;
+}
+
+
+
+.navigation a {
 	text-align: center;
 	padding: 0.611em;
 	border-top: 1px solid rgba(255, 255, 255, 0.3);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#navigation li:last-of-type a {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.navigation a:hover {
-  background: #DF6214;
+.navigation li:last-of-type a {
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 @media all and (max-width: 800px) {
   .navigation {
-    justify-content: center; /* Then we define how is distributed the remaining space */
+    justify-content: space-around; /* Then we define how is distributed the remaining space */
   }
 }
 @media all and (max-width: 600px) {
   .navigation {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
-    /* Then we define the flow direction
-     and if we allow the items to wrap
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
+		/* Then we define the flow direction and if we allow the items to wrap
+   * Remember this is the same as: * flex-direction: row;  * flex-wrap: wrap;  */
     padding: 0;
   }
-
 
 
 
@@ -211,17 +231,23 @@ body section{
 	clear: both;
   display: grid;
   padding-top: 66px; /* 66 px / 18 px = 3.667em */
-	padding-left: 1.5em; /* 36px / 18px = 1.222em */
-	padding-right: 1.5em; /* 36px / 18px = 1.222em */
-	grid-column-gap: 10px;
-  grid-row-gap: 15px;
+	padding-left: 1.5em; /* 36px / 18px = 1.5em */
+	padding-right: 1.5em; /* 36px / 18px = 1.5em */
 }
 
-article #Hanoi {
+
+.About {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+
+
+section article #Hanoi {
   padding-bottom: 4em;
 }
 
-#footer {
+.footer {
   text-align: center;
   font-size: 0.9em; /* 18 / 20 = 0.9em */
 }
@@ -280,70 +306,3 @@ article #Hanoi {
 	grid-column-gap: 5%;
   grid-row-gap: 5%;
 }
-/*.cssgrid #supporting {
-	grid-column: 3/4;
-}
-*/
-
-/*#Years {
-	grid-template-columns: 100px 50px 100px 50px;
-  grid-template-rows: 80px 30px 80px 30px;
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
-}
-
-#cvaleaves {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: row1-start;
-  grid-row-end: 2;
-}
-
-#cvaabove {
-	grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: row1-start;
-  grid-row-end: 2;
-}
-
-#cvarain {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: row1-start;
-  grid-row-end: 2;
-}
-
-#cvaleaves1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: row2-start;
-  grid-row-end: 3;
-}
-
-#cvanoon {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: row2-start;
-  grid-row-end: 3;
-}
-
-#cvafoggy {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: row2-start;
-  grid-row-end: 3;
-}
-
-#redleaf{
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: row2-start;
-  grid-row-end: 3;
-}
-
-#redleaf1{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: row3-start;
-  grid-row-end: 4;
-}*/
